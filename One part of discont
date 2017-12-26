@@ -1,0 +1,16 @@
+class Simplicity:
+    def __init__(self, n):
+        self.numb = n
+
+    def out(self):
+        print(self.numb)
+
+
+class Accuracy(Simplicity):
+    def multi(self, m):
+        self.numb *= m
+
+
+class Coherncy(Simplicity):
+    def inlist(self):
+        self.inlist = list(str(self.numb))
