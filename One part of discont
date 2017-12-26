@@ -14,3 +14,18 @@ class Accuracy(Simplicity):
 class Coherncy(Simplicity):
     def inlist(self):
         self.inlist = list(str(self.numb))
+    
+    def out(self):
+        i = 0
+        while i < len(self.inlist):
+                print(self.inlist[i])
+                i += 1
+
+item1 = Accuracy(90)
+item2 = Coherncy('КаждоеБукваБудетОтдельно')
+
+item1.multi(3)
+item1.out()
+
+item2.inlist()
+item2.out()
